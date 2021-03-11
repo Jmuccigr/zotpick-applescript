@@ -8,7 +8,7 @@ tell application "System Events"
 		-- Have to hardcode Scrivener here because it seems to make the script the frontmost app
 		set appName to "Scrivener"
 	on error errMsg
-		display alert "Problem" message "Could not get the name of the frontmost application."
+		display alert "Problem" message "Could not set the app name to Scrivener (which is weird)."
 		error number -128
 	end try
 end tell
